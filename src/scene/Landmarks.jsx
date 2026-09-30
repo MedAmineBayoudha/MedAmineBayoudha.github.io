@@ -223,7 +223,7 @@ function SkillsBus() {
     ['C · C++ · PYTHON · ARM ASM', -112],
     ['FREERTOS · BARE METAL · DRIVERS', -120],
     ['ETHERNET/UDP · CAN · SPI · I2C · UART', -128],
-    ['KALMAN · H∞ · PID · LPV · RLS', -136],
+    ['KALMAN · H-INF · PID · LPV · RLS', -136],
     ['TINYML · TFLITE MICRO · QUANTIZATION', -144],
     ['CMAKE · DOCKER · CI/CD · GOOGLETEST · HIL', -152],
   ]

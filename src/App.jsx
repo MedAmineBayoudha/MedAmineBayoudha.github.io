@@ -19,6 +19,11 @@ export default function App() {
   const markReady = useCallback(() => setTimeout(() => setReady(true), 250), [])
 
   useEffect(() => initScroll(setActive, setCard), [])
+  // Never leave visitors on the boot screen, even on a very slow connection.
+  useEffect(() => {
+    const t = setTimeout(() => setReady(true), 10000)
+    return () => clearTimeout(t)
+  }, [])
 
   const cards = [
     <Hero key="hero" />,
